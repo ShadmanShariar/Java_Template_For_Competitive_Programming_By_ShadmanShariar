@@ -100,6 +100,14 @@ public static boolean isprime(long n){if(n<=1)return false;else if(n==2)return t
 public static void debug(Object... obj) {
     System.err.println(Arrays.deepToString(obj));
 }
+public static void ruffleSort(int[] a) {
+	int n=a.length;
+	for (int i=0; i<n; i++) {
+		int oi=random.nextInt(n), temp=a[oi];
+		a[oi]=a[i]; a[i]=temp;
+	}
+	Arrays.sort(a);
+}
 public static class FastReader {
 		BufferedReader br;
 		StringTokenizer st;

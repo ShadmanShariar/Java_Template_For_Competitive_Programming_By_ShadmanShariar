@@ -1,9 +1,13 @@
-// Author : Shadman Shariar //
+/*===============================
+Author   :   Shadman Shariar   ||
+===============================*/
 import java.io.*;
 import java.util.*;
+import java.time.*;
 import java.lang.Math.*;
 import java.math.BigInteger;
 import java.text.DecimalFormat;
+import java.nio.charset.Charset;
 public class Main {
 public static Main obj = new Main();
 public static final long N = (long)(1000000001);
@@ -13,8 +17,10 @@ public static final Random random = new Random();
 public static int [] dx = {-1, 1, 0, 0, -1, -1, 1, 1};
 public static int [] dy = {0, 0, -1, 1, -1, 1, -1, 1};
 public static final long mod = (long)(Math.pow(10,9)+7);
+public static final String spliter1 = "\\s+", spliter2 = "[ ]+";
+private static final Integer Null = null;
 //public static FastReader fr = new FastReader();
-//public static Scanner input = new Scanner(System.in);
+public static Scanner input = new Scanner(System.in);
 //public static PrintWriter pw = new PrintWriter(System.out);
 //public static DecimalFormat df = new DecimalFormat(".000");
 //public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,7 +30,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //BigInteger bi = new BigInteger("1000");
 //StringBuilder sb = new StringBuilder();
 //StringBuffer sbf = new StringBuffer();
-//StringTokenizer st = new StringTokenizer("string","split");
+//StringTokenizer st = new StringTokenizer("string",spliter1);
 //ArrayList<Integer> al= new ArrayList<Integer>();
 //LinkedList<Integer> ll= new LinkedList<Integer>();
 //Stack <Integer> stk = new Stack <Integer>();
@@ -48,12 +54,12 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 
-int tc = 1; 
+int tc = 1;
 
-//tc = input.nextInt();
+tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
-	
+
 	debug("Shadman Shariar");
 	
 }
@@ -96,18 +102,29 @@ public static void rangeofprime(int a,int b){int i, j, flag;for (i = a; i <= b; 
 {flag = 0;break;}}if (flag == 1)System.out.println(i);}}
 public static boolean isprime(long n){if(n<=1)return false;else if(n==2)return true;else if
 (n%2==0)return false;for(long i=3;i<=Math.sqrt(n);i+=2){if(n%i==0)return false;}return true;}
+public static void rufflesort(int[]a){int n=a.length;for(int i=0;i<n;i++){
+int oi=random.nextInt(n),temp=a[oi];a[oi]=a[i]; a[i]=temp;}Arrays.sort(a);}
 //===========================================================================================//
 public static void debug(Object... obj) {
-    System.err.println(Arrays.deepToString(obj));
-}
-public static void ruffleSort(int[] a) {
-	int n=a.length;
-	for (int i=0; i<n; i++) {
-		int oi=random.nextInt(n), temp=a[oi];
-		a[oi]=a[i]; a[i]=temp;
+System.err.println(Arrays.deepToString(obj));}
+public static class Node{
+	int data ; Node left, right;
+	public Node (int data) {	
+		this.data = data;
 	}
-	Arrays.sort(a);
 }
+public static Node createTree() {
+	Node root = null;
+	System.out.println("data : ");
+	int data = input.nextInt();
+	if(data == -1) return null;
+	root = new Node(data);
+	System.out.println("left : " + data);
+	root.left = createTree();
+	System.out.println("right :"+ data);
+	root.right = createTree();
+	return root;
+  }
 public static class FastReader {
 		BufferedReader br;
 		StringTokenizer st;

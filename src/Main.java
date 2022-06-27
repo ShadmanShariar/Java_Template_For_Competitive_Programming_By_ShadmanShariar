@@ -1,29 +1,30 @@
-/*===============================
-Author   :   Shadman Shariar   ||
-===============================*/
-import java.io.*;
-import java.util.*;
-import java.time.*;
-import java.lang.Math.*;
-import java.math.BigInteger;
-import java.text.DecimalFormat;
-import java.nio.charset.Charset;
+// Author   :   Shadman Shariar //
+import java.io.*; import java.util.*;
+import java.time.*; import java.lang.Math.*;
+import java.math.BigInteger; import java.text.DecimalFormat;
+import java.nio.charset.Charset; import java.security.KeyStore.Entry;
+import java.io.BufferedReader; import java.io.IOException;
+import java.io.InputStreamReader; import java.io.PrintWriter;
+import java.util.function.Supplier; import java.io.Closeable;
+import java.util.NoSuchElementException; import static java.lang.System.exit;
 public class Main {
 public static Main obj = new Main();
+private static final Integer Null = null;
 public static final long N = (long)(1000000001);
-public static final long bigmod = 1_000_000_007;
-public static final String vowels = "aeiouAEIOU";
+public static final long Bigmod = 1_000_000_007;
+public static final String Vowels = "aeiouAEIOU";
 public static final Random random = new Random();
 public static int [] dx = {-1, 1, 0, 0, -1, -1, 1, 1};
 public static int [] dy = {0, 0, -1, 1, -1, 1, -1, 1};
-public static final long mod = (long)(Math.pow(10,9)+7);
+public static int [] dp1 = new int [10];
+public static int [][] dp2 = new int[10][10]; 
+public static final long bigmod = (long)(Math.pow(10,9)+7);
 public static final String spliter1 = "\\s+", spliter2 = "[ ]+";
-private static final Integer Null = null;
-//public static FastReader fr = new FastReader();
+public static FastReader fr = new FastReader();
 public static Scanner input = new Scanner(System.in);
-//public static PrintWriter pw = new PrintWriter(System.out);
-//public static DecimalFormat df = new DecimalFormat(".000");
-//public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+public static PrintWriter pw = new PrintWriter(System.out);
+public static DecimalFormat df = new DecimalFormat(".000");
+public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 public static void main (String[]args) throws Exception{Scanner input=new Scanner(System.in);
 //===========================================================================================//
 //Vector vc = new Vector();
@@ -56,11 +57,11 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 
 int tc = 1;
 
-tc = input.nextInt();
+//tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
-
-	debug("Shadman Shariar");
+    
+	debug("Done");
 	
 }
 

@@ -1,12 +1,12 @@
 // Author   :   Shadman Shariar //
 import java.io.*; import java.util.*;
 import java.time.*; import java.lang.Math.*;
-import java.math.BigInteger; import java.text.DecimalFormat;
-import java.nio.charset.Charset; import java.security.KeyStore.Entry;
 import java.io.BufferedReader; import java.io.IOException;
+import java.math.BigInteger; import java.text.DecimalFormat;
 import java.io.InputStreamReader; import java.io.PrintWriter;
 import java.util.function.Supplier; import java.io.Closeable;
-import java.util.NoSuchElementException; import static java.lang.System.exit;
+import java.util.stream.*;import static java.lang.System.exit;
+import java.nio.charset.Charset; import java.security.KeyStore.Entry;
 public class Main {
 public static Main obj = new Main();
 private static final Integer Null = null;
@@ -57,11 +57,11 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 
 int tc = 1;
 
-//tc = input.nextInt();
+tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
-    
-	debug("Done");
+
+	debug("Hello From Shadman");
 	
 }
 

@@ -22,7 +22,7 @@ public static final long bigmod = (long)(Math.pow(10,9)+7);
 public static final String spliter1 = "\\s+", spliter2 = "[ ]+";
 public static FastReader fr = new FastReader();
 public static Scanner input = new Scanner(System.in);
-public static PrintWriter pw = new PrintWriter(System.out);
+public static PrintWriter out = new PrintWriter(System.out);
 public static DecimalFormat df = new DecimalFormat(".000");
 public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 public static void main (String[]args) throws Exception{Scanner input=new Scanner(System.in);
@@ -60,21 +60,42 @@ int tc = 1;
 tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
-
-	debug("Hello From Shadman");
+	
+	debug("Done!");
 	
 }
 
 //long end = System.currentTimeMillis();
 //System.out.println("Time : "+((end-start)/1000));
 //===========================================================================================//
-//      pw.flush();
-//      pw.close();
+        out.flush();
+        out.close();
         input.close();
         System.exit(0);
 }
 //===========================================================================================//
 //----->> Temporary Method Starts Here <<-----//
+public static void sort(int[] a) {
+	ArrayList<Integer> l=new ArrayList<>();
+	for (int i:a) l.add(i);
+	Collections.sort(l);
+	for (int i=0; i<a.length; i++) a[i]=l.get(i);
+}
+public static long add(long a, long b) {
+	return (a+b)%Bigmod;
+}
+public static long sub(long a, long b) {
+	return ((a-b)%Bigmod+Bigmod)%Bigmod;
+}
+public static long mul(long a, long b) {
+	return (a*b)%Bigmod;
+}
+public static long exp(long base, long exp) {
+	if (exp==0) return 1;
+	long half=exp(base, exp/2);
+	if (exp%2==0) return mul(half, half);
+	return mul(half, mul(half, base));
+}
 //----->>  Temporary Method Ends Here  <<-----//
 //===========================================================================================//
 public static long lcm(long a,long b){return (a/gcd(a,b))*b;}

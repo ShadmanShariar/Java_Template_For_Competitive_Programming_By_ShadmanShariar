@@ -52,6 +52,8 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //LinkedList<LinkedList<Integer>> ll2= new LinkedList<LinkedList<Integer>>();
 //LinkedList<Integer> adj[] = new LinkedList[1000];
 //ArrayList<Integer> adj2[] = new ArrayList[1000];
+//HashSet<Integer> hsj[] = new HashSet[1000];
+//HashMap<Integer,Integer> hmj[] = new HashMap[1000];
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 
@@ -60,9 +62,9 @@ int tc = 1;
 tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
-	
-	debug("Done!");
-	
+
+
+      
 }
 
 //long end = System.currentTimeMillis();

@@ -54,17 +54,19 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //ArrayList<Integer> adj2[] = new ArrayList[1000];
 //HashSet<Integer> hsj[] = new HashSet[1000];
 //HashMap<Integer,Integer> hmj[] = new HashMap[1000];
+//ArrayList<int[]> aa = new ArrayList<int[]>();
+//LinkedList<long[]> al = new LinkedList<long[]>();
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 
 int tc = 1;
 
-tc = input.nextInt();
+//tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
 
-
-      
+debug("Author - Shadman Shariar");
+	
 }
 
 //long end = System.currentTimeMillis();
@@ -76,7 +78,7 @@ for (int tt = 1; tt <= tc; tt++) {
         System.exit(0);
 }
 //===========================================================================================//
-//----->> Temporary Method Starts Here <<-----//
+//-------->> Temporary Method Starts Here <<--------//
 public static void sort(int[] a) {
 	ArrayList<Integer> l=new ArrayList<>();
 	for (int i:a) l.add(i);
@@ -98,7 +100,7 @@ public static long exp(long base, long exp) {
 	if (exp%2==0) return mul(half, half);
 	return mul(half, mul(half, base));
 }
-//----->>  Temporary Method Ends Here  <<-----//
+//-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
 public static long lcm(long a,long b){return (a/gcd(a,b))*b;}
 public static long gcd(long a,long b){if(a==0)return b;return gcd(b%a,a);}

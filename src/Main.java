@@ -60,11 +60,20 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 
+// Bitmask -----------------------------------
+// Check Bit - (number&(1<<pos)) -> 0/1 bit  |
+// Set Bit - number = (number|(1<<pos))      |
+// Unset Bit - number = (number&(~(1<<pos))) |
+// inverse toggle - number = number^(1<<pos) |
+//--------------------------------------------
+
 int tc = 1;
 
 //tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
+	
+    debug("Shadman The Great");
 	
 }
 

@@ -4,7 +4,8 @@ import java.time.*; import java.lang.Math.*;
 import java.io.BufferedReader; import java.io.IOException;
 import java.math.BigInteger; import java.text.DecimalFormat;
 import java.io.InputStreamReader; import java.io.PrintWriter;
-import java.util.function.Supplier; import java.io.Closeable;
+import java.util.function.Supplier;import java.io.Closeable;
+import java.util.regex.Pattern;import java.util.regex.Matcher;
 import java.util.stream.*;import static java.lang.System.exit;
 import java.nio.charset.Charset; import java.security.KeyStore.Entry;
 public class Main {
@@ -64,8 +65,6 @@ int tc = 1;
 //tc = input.nextInt();
 
 for (int tt = 1; tt <= tc; tt++) {
-
-debug("Author - Shadman Shariar");
 	
 }
 

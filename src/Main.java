@@ -73,7 +73,7 @@ int tc = 1;
 
 for (int tt = 1; tt <= tc; tt++) {
 	
-    debug("Shadman The Great");
+debug("Shadman Shariar");
 	
 }
 
@@ -87,29 +87,15 @@ for (int tt = 1; tt <= tc; tt++) {
 }
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
-public static void sort(int[] a) {
-	ArrayList<Integer> l=new ArrayList<>();
-	for (int i:a) l.add(i);
-	Collections.sort(l);
-	for (int i=0; i<a.length; i++) a[i]=l.get(i);
-}
-public static long add(long a, long b) {
-	return (a+b)%Bigmod;
-}
-public static long sub(long a, long b) {
-	return ((a-b)%Bigmod+Bigmod)%Bigmod;
-}
-public static long mul(long a, long b) {
-	return (a*b)%Bigmod;
-}
-public static long exp(long base, long exp) {
-	if (exp==0) return 1;
-	long half=exp(base, exp/2);
-	if (exp%2==0) return mul(half, half);
-	return mul(half, mul(half, base));
-}
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
+public static void sort(int[] a) {ArrayList<Integer> l=new ArrayList<>();
+for(int i:a)l.add(i);Collections.sort(l);for(int i=0; i<a.length;i++)a[i]=l.get(i);}
+public static long add(long a, long b) {return (a+b)%Bigmod;}
+public static long sub(long a, long b) {return ((a-b)%Bigmod+Bigmod)%Bigmod;}
+public static long mul(long a, long b) {return (a*b)%Bigmod;}
+public static long exp(long base,long exp){if(exp==0)return 1;long half=exp(base,exp/2);
+if (exp%2==0) return mul(half, half);return mul(half, mul(half, base));}
 public static long lcm(long a,long b){return (a/gcd(a,b))*b;}
 public static long gcd(long a,long b){if(a==0)return b;return gcd(b%a,a);}
 public static long nPr(long n,long r){return factorial(n)/factorial(n-r);}

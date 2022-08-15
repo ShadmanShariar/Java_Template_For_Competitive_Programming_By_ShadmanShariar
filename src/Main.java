@@ -1,4 +1,5 @@
-// Author   :   Shadman Shariar //
+ // Author : Shadman Shariar              //
+//  Email  : shadmanshariar007@gmail.com //
 import java.io.*; import java.util.*;
 import java.time.*; import java.lang.Math.*;
 import java.io.BufferedReader; import java.io.IOException;
@@ -73,7 +74,7 @@ int tc = 1;
 
 for (int tt = 1; tt <= tc; tt++) {
 	
-debug("Shadman Shariar");
+	debug("Shadman Shariar .....");
 	
 }
 
@@ -89,6 +90,7 @@ debug("Shadman Shariar");
 //-------->> Temporary Method Starts Here <<--------//
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
+public static void debug(Object... obj){System.err.println(Arrays.deepToString(obj));}
 public static void sort(int[] a) {ArrayList<Integer> l=new ArrayList<>();
 for(int i:a)l.add(i);Collections.sort(l);for(int i=0; i<a.length;i++)a[i]=l.get(i);}
 public static long add(long a, long b) {return (a+b)%Bigmod;}
@@ -125,8 +127,6 @@ public static boolean isprime(long n){if(n<=1)return false;else if(n==2)return t
 public static void rufflesort(int[]a){int n=a.length;for(int i=0;i<n;i++){
 int oi=random.nextInt(n),temp=a[oi];a[oi]=a[i]; a[i]=temp;}Arrays.sort(a);}
 //===========================================================================================//
-public static void debug(Object... obj) {
-System.err.println(Arrays.deepToString(obj));}
 public static class Node{
 	int data ; Node left, right;
 	public Node (int data) {	
@@ -144,7 +144,7 @@ public static Node createTree() {
 	System.out.println("right :"+ data);
 	root.right = createTree();
 	return root;
-  }
+}
 public static class FastReader {
 		BufferedReader br;
 		StringTokenizer st;

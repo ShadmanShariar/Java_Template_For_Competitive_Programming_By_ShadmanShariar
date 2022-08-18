@@ -91,6 +91,10 @@ for (int tt = 1; tt <= tc; tt++) {
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
 public static void debug(Object... obj){System.err.println(Arrays.deepToString(obj));}
+public static void swap(int a[], int i, int j) {
+a[i] ^= a[j];a[j] ^= a[i];a[i] ^= a[j];}
+public static void swap(long a[], int i, int j) {
+a[i] ^= a[j];a[j] ^= a[i];a[i] ^= a[j];}
 public static void sort(int[] a) {ArrayList<Integer> l=new ArrayList<>();
 for(int i:a)l.add(i);Collections.sort(l);for(int i=0; i<a.length;i++)a[i]=l.get(i);}
 public static long add(long a, long b) {return (a+b)%Bigmod;}

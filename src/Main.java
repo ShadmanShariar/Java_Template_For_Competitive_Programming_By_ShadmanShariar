@@ -58,6 +58,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //HashMap<Integer,Integer> hmj[] = new HashMap[1000];
 //ArrayList<int[]> aa = new ArrayList<int[]>();
 //LinkedList<long[]> al = new LinkedList<long[]>();
+//SortedSet< Integer > ss = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 
@@ -130,6 +131,7 @@ public static boolean isprime(long n){if(n<=1)return false;else if(n==2)return t
 (n%2==0)return false;for(long i=3;i<=Math.sqrt(n);i+=2){if(n%i==0)return false;}return true;}
 public static void rufflesort(int[]a){int n=a.length;for(int i=0;i<n;i++){
 int oi=random.nextInt(n),temp=a[oi];a[oi]=a[i]; a[i]=temp;}Arrays.sort(a);}
+public static int pit(int n){int res=1;for(int i=2;i<n;i++)if(gcd(i,n)==1)res++;return res;}
 //===========================================================================================//
 public static class Node{
 	int data ; Node left, right;

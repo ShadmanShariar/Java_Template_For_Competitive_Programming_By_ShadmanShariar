@@ -91,6 +91,13 @@ for (int tt = 1; tt <= tc; tt++) {
 //-------->> Temporary Method Starts Here <<--------//
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
+private static void bdfs(char[][] grid, int i, int j) {
+if(i<0||j<0||i>=grid.length||j>=grid[i].length||grid[i][j]=='0')return;
+grid[i][j] = '0';bdfs(grid, i+1, j);bdfs(grid, i-1, j);bdfs(grid, i, j+1);
+bdfs(grid, i, j-1); return;}
+public static class pair { int first, second;
+public pair(int first, int second) 
+{ this.first = first; this.second = second;}}
 public static void debug(Object... obj){System.err.println(Arrays.deepToString(obj));}
 public static void swap(int a[], int i, int j) {
 a[i] ^= a[j];a[j] ^= a[i];a[i] ^= a[j];}

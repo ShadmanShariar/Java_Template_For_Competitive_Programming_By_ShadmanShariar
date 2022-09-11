@@ -60,6 +60,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //LinkedList<long[]> al = new LinkedList<long[]>();
 //Arrays.sort(array, Comparator.comparingInt(o -> o[0]));
 //SortedSet< Integer > ss = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
+//SortedMap< Integer, Integer > sm = new TreeMap<>( (i, j) -> i > j ? 1 : -1 );
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 

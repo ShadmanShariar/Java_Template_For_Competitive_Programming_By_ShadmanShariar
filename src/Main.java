@@ -58,7 +58,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //HashMap<Integer,Integer> hmj[] = new HashMap[1000];
 //ArrayList<int[]> aa = new ArrayList<int[]>();
 //LinkedList<long[]> al = new LinkedList<long[]>();
-//Arrays.sort(array, Comparator.comparingInt(o -> o[0]));
+//Arrays.sort(dp2, Comparator.comparingInt(o -> o[0]));
 //SortedSet< Integer > ss = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
 //SortedMap< Integer, Integer > sm = new TreeMap<>( (i, j) -> i > j ? 1 : -1 );
 //===========================================================================================//

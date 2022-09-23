@@ -92,7 +92,7 @@ for (int tt = 1; tt <= tc; tt++) {
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
 private static int[] nodes;
-public static void setsizeooofunion(int size) {
+public static void setsizeofunion(int size) {
     nodes = new int[size];
     for (int i = 0; i < size; i++) {
         nodes[i] = i;

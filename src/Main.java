@@ -91,6 +91,29 @@ for (int tt = 1; tt <= tc; tt++) {
 }
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
+private static int[] nodes;
+public static void setsizeooofunion(int size) {
+    nodes = new int[size];
+    for (int i = 0; i < size; i++) {
+        nodes[i] = i;
+    } }
+public static void printconnections() {
+    for (int i = 0; i < nodes.length; i++) {
+        System.out.print(i + " | ");
+    }
+    System.out.println();
+    for (int n : nodes) {
+        System.out.print(n + " | ");
+    } }
+public static void union(int p, int q) {
+    int valP = nodes[p];
+    int valQ = nodes[q];
+    for (int i = 0; i < nodes.length; i++) {
+        if (nodes[i] == valP) {
+            nodes[i] = valQ;
+        } } }
+public static boolean connected(int p, int q) {
+    return nodes[p] == nodes[q]; }
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
 public static void bdfs(char[][] grid, int i, int j) {

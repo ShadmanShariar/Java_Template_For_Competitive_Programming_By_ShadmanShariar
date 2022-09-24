@@ -61,6 +61,9 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //Arrays.sort(dp2, Comparator.comparingInt(o -> o[0]));
 //SortedSet< Integer > ss = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
 //SortedMap< Integer, Integer > sm = new TreeMap<>( (i, j) -> i > j ? 1 : -1 );
+//Arrays.stream(arr).boxed().toList(); //These 2 are Array to List
+//Arrays.stream(arr).boxed().collect(Collectors.toList());
+//Integer[] array = (Integer[]) l.toArray(new Integer[l.size()]); //List to Array
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 
@@ -92,11 +95,16 @@ for (int tt = 1; tt <= tc; tt++) {
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
 private static int[] nodes;
-public static void setsizeofunion(int size) {
+public static void setsizeooofunion(int size) {
     nodes = new int[size];
     for (int i = 0; i < size; i++) {
         nodes[i] = i;
     } }
+public static int root (int i) {
+	while(i != nodes[i]) i = nodes[i];
+	return i;}
+public static boolean connected2(int p, int q) {
+    return root(p) == root(q); }
 public static void printconnections() {
     for (int i = 0; i < nodes.length; i++) {
         System.out.print(i + " | ");
@@ -105,6 +113,11 @@ public static void printconnections() {
     for (int n : nodes) {
         System.out.print(n + " | ");
     } }
+public static void union2(int p, int q) {
+	int i = root(p);
+	int j = root(q);
+	nodes[i] = j;
+}
 public static void union(int p, int q) {
     int valP = nodes[p];
     int valQ = nodes[q];

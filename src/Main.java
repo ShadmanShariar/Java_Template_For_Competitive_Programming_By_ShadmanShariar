@@ -16,6 +16,7 @@ public static final long N = (long)(1000000001);
 public static final long Bigmod = 1_000_000_007;
 public static final String Vowels = "aeiouAEIOU";
 public static final Random random = new Random();
+//random.nextInt(max)+min)&(int)(Math.random()*max)+min
 public static int [] dx = {-1, 1, 0, 0, -1, -1, 1, 1};
 public static int [] dy = {0, 0, -1, 1, -1, 1, -1, 1};
 public static int [] dp1 = new int [10];

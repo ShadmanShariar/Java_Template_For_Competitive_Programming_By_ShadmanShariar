@@ -68,6 +68,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 //random.nextInt(max-min+1)+min)&(int)(Math.random()*(max-min+1)+min)
+//Subsets -> (1<<length) Check & Set -> ((i&(1<<j))!=0)
 // Bitmask -----------------------------------
 // Check Bit - (number&(1<<pos)) -> 0/1 bit  |
 // Set Bit - number = (number|(1<<pos))      |

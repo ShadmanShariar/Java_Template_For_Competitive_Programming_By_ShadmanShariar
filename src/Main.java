@@ -30,6 +30,7 @@ public static BufferedReader br = new BufferedReader(new InputStreamReader(Syste
 public static void main (String[]args) throws Exception{Scanner input=new Scanner(System.in);
 //===========================================================================================//
 //Vector vc = new Vector();
+//BitSet bs = new BitSet();
 //BigInteger bi = new BigInteger("1000");
 //StringBuilder sb = new StringBuilder();
 //StringBuffer sbf = new StringBuffer();

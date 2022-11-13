@@ -67,6 +67,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //Integer[] array = (Integer[]) l.toArray(new Integer[l.size()]); //List to Array
 //===========================================================================================//
 //long start = System.currentTimeMillis();
+//int[] digit = new int[10];
 //random.nextInt(max-min+1)+min)&(int)(Math.random()*(max-min+1)+min)
 //Subsets -> (1<<length) Check & Set -> ((i&(1<<j))!=0)
 // Bitmask -----------------------------------

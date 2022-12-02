@@ -158,6 +158,7 @@ public static long mul(long a, long b) {return (a*b)%Bigmod;}
 public static long exp(long base,long exp){if(exp==0)return 1;long half=exp(base,exp/2);
 if (exp%2==0) return mul(half, half);return mul(half, mul(half, base));}
 public static long lcm(long a,long b){return (a/gcd(a,b))*b;}
+public static int gcd(int a,int b){if(a==0)return b;return gcd(b%a,a);}
 public static long gcd(long a,long b){if(a==0)return b;return gcd(b%a,a);}
 public static long nPr(long n,long r){return factorial(n)/factorial(n-r);}
 public static long nCr(long n,long r){return factorial(n)/(factorial(r)*factorial(n-r));}

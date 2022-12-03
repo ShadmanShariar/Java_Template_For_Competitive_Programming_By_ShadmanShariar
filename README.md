@@ -97,6 +97,8 @@ for (int tt = 1; tt <= tc; tt++) {
 }
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
+//-------->>  Temporary Method Ends Here  <<--------//
+//===========================================================================================//
 public static LinkedList<String>ps=new LinkedList<String>();
 public static void permute(String s , String answer)
 {if (s.length() == 0){ps.add(answer);answer="";return;}
@@ -136,8 +138,6 @@ public static void union(int p, int q) {
         } } }
 public static boolean connected(int p, int q) {
     return nodes[p] == nodes[q]; }
-//-------->>  Temporary Method Ends Here  <<--------//
-//===========================================================================================//
 public static void bdfs(char[][] grid, int i, int j) {
 if(i<0||j<0||i>=grid.length||j>=grid[i].length||grid[i][j]=='0')return;
 grid[i][j] = '0';bdfs(grid, i+1, j);bdfs(grid, i-1, j);bdfs(grid, i, j+1);
@@ -157,10 +157,15 @@ public static long sub(long a, long b) {return ((a-b)%Bigmod+Bigmod)%Bigmod;}
 public static long mul(long a, long b) {return (a*b)%Bigmod;}
 public static long exp(long base,long exp){if(exp==0)return 1;long half=exp(base,exp/2);
 if (exp%2==0) return mul(half, half);return mul(half, mul(half, base));}
+public static int lcm(int a,int b){return (a/gcd(a,b))*b;}
 public static long lcm(long a,long b){return (a/gcd(a,b))*b;}
+public static int gcd(int a,int b){if(a==0)return b;return gcd(b%a,a);}
 public static long gcd(long a,long b){if(a==0)return b;return gcd(b%a,a);}
+public static long nPr(int n,int r){return factorial(n)/factorial(n-r);}
+public static long nCr(int n,int r){return factorial(n)/(factorial(r)*factorial(n-r));}
 public static long nPr(long n,long r){return factorial(n)/factorial(n-r);}
 public static long nCr(long n,long r){return factorial(n)/(factorial(r)*factorial(n-r));}
+public static long factorial(int n){return (n==1||n==0)?1:n*factorial(n-1);}
 public static long factorial(long n){return (n==1||n==0)?1:n*factorial(n-1);}
 public static long countsubstr(String str){long n=str.length();return n*(n+1)/2;}
 public static long fastpower(long a,long b,long n) {long res=1;while(b>0){if((b&1)!=0)

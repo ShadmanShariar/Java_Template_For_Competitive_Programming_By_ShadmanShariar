@@ -161,6 +161,8 @@ public static int lcm(int a,int b){return (a/gcd(a,b))*b;}
 public static long lcm(long a,long b){return (a/gcd(a,b))*b;}
 public static int gcd(int a,int b){if(a==0)return b;return gcd(b%a,a);}
 public static long gcd(long a,long b){if(a==0)return b;return gcd(b%a,a);}
+public static long nPr(int n,int r){return factorial(n)/factorial(n-r);}
+public static long nCr(int n,int r){return factorial(n)/(factorial(r)*factorial(n-r));}
 public static long nPr(long n,long r){return factorial(n)/factorial(n-r);}
 public static long nCr(long n,long r){return factorial(n)/(factorial(r)*factorial(n-r));}
 public static long factorial(int n){return (n==1||n==0)?1:n*factorial(n-1);}

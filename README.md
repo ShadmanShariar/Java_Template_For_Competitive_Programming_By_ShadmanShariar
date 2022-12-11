@@ -99,12 +99,6 @@ for (int tt = 1; tt <= tc; tt++) {
 //-------->> Temporary Method Starts Here <<--------//
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
-public static LinkedList<String>ps=new LinkedList<String>();
-public static void permute(String s , String answer)
-{if (s.length() == 0){ps.add(answer);answer="";return;}
-for(int i = 0 ;i < s.length(); i++){char ch = s.charAt(i);
-String left_substr=s.substring(0,i);String right_substr=s.substring(i+1);
-String rest = left_substr + right_substr;permute(rest, answer + ch);}}
 private static int[] nodes;
 public static void setsizeooofunion(int size) {
     nodes = new int[size];
@@ -138,14 +132,20 @@ public static void union(int p, int q) {
         } } }
 public static boolean connected(int p, int q) {
     return nodes[p] == nodes[q]; }
+public static void debug(Object... obj){System.err.println(Arrays.deepToString(obj));}
+public static class pair { int first, second;
+public pair(int first, int second) 
+{ this.first = first; this.second = second;}}
+public static LinkedList<String>ps=new LinkedList<String>();
+public static void permute(String s , String answer)
+{if (s.length() == 0){ps.add(answer);answer="";return;}
+for(int i = 0 ;i < s.length(); i++){char ch = s.charAt(i);
+String left_substr=s.substring(0,i);String right_substr=s.substring(i+1);
+String rest = left_substr + right_substr;permute(rest, answer + ch);}}
 public static void bdfs(char[][] grid, int i, int j) {
 if(i<0||j<0||i>=grid.length||j>=grid[i].length||grid[i][j]=='0')return;
 grid[i][j] = '0';bdfs(grid, i+1, j);bdfs(grid, i-1, j);bdfs(grid, i, j+1);
 bdfs(grid, i, j-1); return;}
-public static class pair { int first, second;
-public pair(int first, int second) 
-{ this.first = first; this.second = second;}}
-public static void debug(Object... obj){System.err.println(Arrays.deepToString(obj));}
 public static void swap(int a[], int i, int j) {
 a[i] ^= a[j];a[j] ^= a[i];a[i] ^= a[j];}
 public static void swap(long a[], int i, int j) {

@@ -57,6 +57,7 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //ArrayList<Integer> adj2[] = new ArrayList[1000];
 //HashSet<Integer> hsj[] = new HashSet[1000];
 //HashMap<Integer,Integer> hmj[] = new HashMap[1000];
+//HashMap<String, Object>[] hashMapArray = (HashMap<String, Object>[])new HashMap[size];
 //ArrayList<int[]> aa = new ArrayList<int[]>();
 //LinkedList<long[]> la = new LinkedList<long[]>();
 //Arrays.sort(dp2, Comparator.comparingInt(o -> o[0]));

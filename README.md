@@ -61,8 +61,8 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //ArrayList<int[]> aa = new ArrayList<int[]>();
 //LinkedList<long[]> la = new LinkedList<long[]>();
 //Arrays.sort(dp2, Comparator.comparingInt(o -> o[0]));
-//SortedSet< Integer > ss = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
-//SortedMap< Integer, Integer > sm = new TreeMap<>( (i, j) -> i > j ? 1 : -1 );
+//SortedSet< Integer > multiset = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
+//SortedMap< Integer, Integer > multimap = new TreeMap<>( (i, j) -> i > j ? 1 : -1 );
 //Arrays.stream(arr).boxed().toList(); //These 2 are Array to List
 //Arrays.stream(arr).boxed().collect(Collectors.toList());
 //Integer[] array = (Integer[]) l.toArray(new Integer[l.size()]); //List to Array

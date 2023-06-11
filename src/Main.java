@@ -97,6 +97,28 @@ for (int tt = 1; tt <= tc; tt++) {
 }
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
+private int lower_bound(int[] nums, int target) {
+    int low = 0, high = nums.length - 1;
+    while(low < high) {
+        int mid = low + (high - low) / 2;
+        if(nums[mid] < target)
+            low = mid + 1;
+        else
+            high = mid;
+    }
+    return nums[low] == target? low : -1;
+}
+private int upper_bound(int[] nums, int target) {
+    int low = 0, high = nums.length - 1;
+    while(low < high) {
+        int mid = low + (high+1 - low) / 2;
+        if(nums[mid] > target)
+            high = mid - 1;
+        else
+            low = mid;
+    }
+    return nums[low] == target? low : -1;
+}
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
 private static int[] nodes;

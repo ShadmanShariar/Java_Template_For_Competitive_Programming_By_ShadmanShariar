@@ -97,18 +97,9 @@ for (int tt = 1; tt <= tc; tt++) {
 }
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
-private int lower_bound(int[] nums, int target) {
-    int low = 0, high = nums.length - 1;
-    while(low < high) {
-        int mid = low + (high - low) / 2;
-        if(nums[mid] < target)
-            low = mid + 1;
-        else
-            high = mid;
-    }
-    return nums[low] == target? low : -1;
-}
-private int upper_bound(int[] nums, int target) {
+//-------->>  Temporary Method Ends Here  <<--------//
+//===========================================================================================//
+private static int upper_bound(int[] nums, int target) {
     int low = 0, high = nums.length - 1;
     while(low < high) {
         int mid = low + (high+1 - low) / 2;
@@ -119,8 +110,17 @@ private int upper_bound(int[] nums, int target) {
     }
     return nums[low] == target? low : -1;
 }
-//-------->>  Temporary Method Ends Here  <<--------//
-//===========================================================================================//
+private static int lower_bound(int[] nums, int target) {
+    int low = 0, high = nums.length - 1;
+    while(low < high) {
+        int mid = low + (high - low) / 2;
+        if(nums[mid] < target)
+            low = mid + 1;
+        else
+            high = mid;
+    }
+    return nums[low] == target? low : -1;
+}
 private static int[] nodes;public static void setsizeooofunion(int size)
 {nodes = new int[size];for (int i = 0; i < size; i++) {nodes[i] = i;}}
 public static int root (int i){while(i!=nodes[i])i=nodes[i];return i;}

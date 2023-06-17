@@ -121,39 +121,17 @@ private int upper_bound(int[] nums, int target) {
 }
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
-private static int[] nodes;
-public static void setsizeooofunion(int size) {
-    nodes = new int[size];
-    for (int i = 0; i < size; i++) {
-        nodes[i] = i;
-    } }
-public static int root (int i) {
-	while(i != nodes[i]) i = nodes[i];
-	return i;}
-public static boolean connected2(int p, int q) {
-    return root(p) == root(q); }
+private static int[] nodes;public static void setsizeooofunion(int size)
+{nodes = new int[size];for (int i = 0; i < size; i++) {nodes[i] = i;}}
+public static int root (int i){while(i!=nodes[i])i=nodes[i];return i;}
+public static boolean connected2(int p, int q){return root(p) == root(q);}
 public static void printconnections() {
-    for (int i = 0; i < nodes.length; i++) {
-        System.out.print(i + " | ");
-    }
-    System.out.println();
-    for (int n : nodes) {
-        System.out.print(n + " | ");
-    } }
-public static void union2(int p, int q) {
-	int i = root(p);
-	int j = root(q);
-	nodes[i] = j;
-}
-public static void union(int p, int q) {
-    int valP = nodes[p];
-    int valQ = nodes[q];
-    for (int i = 0; i < nodes.length; i++) {
-        if (nodes[i] == valP) {
-            nodes[i] = valQ;
-        } } }
-public static boolean connected(int p, int q) {
-    return nodes[p] == nodes[q]; }
+for (int i = 0; i < nodes.length; i++) {System.out.print(i + " | ");}
+System.out.println();for (int n : nodes) {System.out.print(n + " | ");}}
+public static void union2(int p, int q){int i=root(p);int j=root(q);nodes[i]=j;}
+public static void union(int p, int q) {int valP = nodes[p];int valQ = nodes[q];
+for (int i = 0; i < nodes.length; i++){if(nodes[i]==valP){nodes[i]=valQ;}}}
+public static boolean connected(int p, int q){return nodes[p]==nodes[q];}
 public static void debug(Object... obj){System.err.println(Arrays.deepToString(obj));}
 public static class pair { int first, second;
 public pair(int first, int second) 

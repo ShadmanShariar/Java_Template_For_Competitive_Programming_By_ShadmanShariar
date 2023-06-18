@@ -121,7 +121,7 @@ private static int lower_bound(int[] nums, int target) {
     }
     return nums[low] == target? low : -1;
 }
-private static int[] nodes;public static void setsizeooofunion(int size)
+private static int[] nodes;public static void setsizeofunion(int size)
 {nodes = new int[size];for (int i = 0; i < size; i++) {nodes[i] = i;}}
 public static int root (int i){while(i!=nodes[i])i=nodes[i];return i;}
 public static boolean connected2(int p, int q){return root(p) == root(q);}

@@ -18,6 +18,7 @@ public static final String Vowels = "aeiouAEIOU";
 public static final Random random = new Random();
 public static int [] dx = {-1, 1, 0, 0, -1, -1, 1, 1};
 public static int [] dy = {0, 0, -1, 1, -1, 1, -1, 1};
+public static int[] digit = new int[10];
 public static int [] dp1 = new int [10];
 public static int [][] dp2 = new int[10][10]; 
 public static final long bigmod = (long)(Math.pow(10,9)+7);
@@ -59,7 +60,10 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //HashMap<Integer,Integer> hmj[] = new HashMap[1000];
 //ArrayList<int[]> aa = new ArrayList<int[]>();
 //LinkedList<long[]> la = new LinkedList<long[]>();
+//HashSet<int[]> hsa = new HashSet<int[]>();
+//HashMap<String,int[]> hma = new HashMap<String,int[]>();
 //Arrays.sort(dp2, Comparator.comparingInt(o -> o[0]));
+//Collections.sort(ll2,Comparator.comparing(o->o.get(0)));
 //SortedSet< Integer > multiset = new TreeSet<>( (i, j) -> i > j ? 1 : -1 );
 //SortedMap< Integer, Integer > multimap = new TreeMap<>( (i, j) -> i > j ? 1 : -1 );
 //Arrays.stream(arr).boxed().toList(); //These 2 are Array to List
@@ -67,7 +71,6 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //Integer[] array = (Integer[]) l.toArray(new Integer[l.size()]); //List to Array
 //===========================================================================================//
 //long start = System.currentTimeMillis();
-//int[] digit = new int[10];
 //random.nextInt(max-min+1)+min)&(int)(Math.random()*(max-min+1)+min)
 //Subsets -> (1<<length) Check & Set -> ((i&(1<<j))!=0)
 // Bitmask -----------------------------------

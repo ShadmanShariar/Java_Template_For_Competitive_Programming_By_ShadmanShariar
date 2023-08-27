@@ -9,33 +9,6 @@ import java.util.function.Supplier;import java.io.Closeable;
 import java.util.regex.Pattern;import java.util.regex.Matcher;
 import java.util.stream.*;import static java.lang.System.exit;
 import java.nio.charset.Charset; import java.security.KeyStore.Entry;
-//class Class {
-//    int id;
-//    String name;
-//    Class(int id,String name){
-//        this.id = id;
-//        this.name = name; 
-//    }
-//}
-//class nameComparator implements Comparator<Class>
-//{
-//    @Override
-//    public int compare(Class a, Class b) 
-//    {
-//        return a.name.compareTo(b.name); 
-//    }
-//}
-//class idComparator implements Comparator<Class>
-//{
-//    @Override
-//    public int compare(Class a, Class b) 
-//    {
-//    	if(a.name.equals(b.name)) {
-//        return a.id-b.id; 
-//    	}
-//        return 0;
-//    }
-//}
 public class Main {
 public static Main obj = new Main();
 private static final Integer Null = null;
@@ -127,6 +100,33 @@ for (int tt = 1; tt <= tc; tt++) {
 }
 //===========================================================================================//
 //-------->> Temporary Method Starts Here <<--------//
+//class Class {
+//    int id;
+//    String name;
+//    Class(int id,String name){
+//        this.id = id;
+//        this.name = name; 
+//    }
+//}
+//class nameComparator implements Comparator<Class>
+//{
+//    @Override
+//    public int compare(Class a, Class b) 
+//    {
+//        return a.name.compareTo(b.name); 
+//    }
+//}
+//class idComparator implements Comparator<Class>
+//{
+//    @Override
+//    public int compare(Class a, Class b) 
+//    {
+//    	if(a.name.equals(b.name)) {
+//        return a.id-b.id; 
+//    	}
+//        return 0;
+//    }
+//}
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
 private static int upper_bound(int[]nums,int target){int low=0,high=nums.length-1;

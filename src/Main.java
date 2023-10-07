@@ -99,6 +99,10 @@ for (int tt = 1; tt <= tc; tt++) {
         System.exit(0);
 }
 //===========================================================================================//
+public static String baseConversion(String number, int sBase, int dBase)
+{
+    return Integer.toString(Integer.parseInt(number, sBase), dBase);
+}
 //-------->> Temporary Method Starts Here <<--------//
 //class Class {
 //    int id;

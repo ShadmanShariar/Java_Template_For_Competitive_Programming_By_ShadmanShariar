@@ -99,11 +99,16 @@ for (int tt = 1; tt <= tc; tt++) {
         System.exit(0);
 }
 //===========================================================================================//
-public static String baseConversion(String number, int sBase, int dBase)
-{
-    return Integer.toString(Integer.parseInt(number, sBase), dBase);
-}
 //-------->> Temporary Method Starts Here <<--------//
+//Collections.sort(list, new Comparator<String>()
+//{
+//  @Override public int compare(String X, String Y)
+//  {
+//      String XY = X + Y;
+//      String YX = Y + X;
+//      return XY.compareTo(YX) > 0 ? -1 : 1;
+//  }
+//});
 //class Class {
 //    int id;
 //    String name;
@@ -133,6 +138,8 @@ public static String baseConversion(String number, int sBase, int dBase)
 //}
 //-------->>  Temporary Method Ends Here  <<--------//
 //===========================================================================================//
+public static String baseConversion(String number, int sBase, int dBase)
+{return Integer.toString(Integer.parseInt(number, sBase), dBase);}
 private static int upper_bound(int[]nums,int target){int low=0,high=nums.length-1;
 while(low < high) {int mid = low + (high+1 - low) / 2;if(nums[mid] > target)
 high = mid - 1;else low = mid;}return nums[low] == target? low : -1;}

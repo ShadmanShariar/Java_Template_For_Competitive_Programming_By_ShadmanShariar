@@ -1,3 +1,5 @@
+![Screenshot (2098)](https://github.com/ShadmanShariar/My_Java_Template_For_Competitive_Programming/assets/75669228/729926ac-43eb-4bce-9388-87e54fbbdfbc)
+
 ![Screenshot (1817)](https://github.com/ShadmanShariar/My_Java_Template_For_Competitive_Programming/assets/75669228/b165a541-4973-4123-86a8-062d289dbcb2)
 
         // List

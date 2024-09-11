@@ -69,6 +69,11 @@ public static void main (String[]args) throws Exception{Scanner input=new Scanne
 //Arrays.stream(arr).boxed().toList(); //These 2 are Array to List
 //Arrays.stream(arr).boxed().collect(Collectors.toList());
 //Integer[] array = (Integer[]) l.toArray(new Integer[l.size()]); //List to Array
+//2D Array sort based on column 1 in order in reverse order when the array is Int array
+//Arrays.sort(arr,Comparator.comparingInt((int[] o) -> o[1])); 
+//in reverse order Arrays.sort(arr,Comparator.comparingInt((int[] o) -> o[1]).reversed());
+//2D Array sort based on column 1 when the array is String array
+//Arrays.sort(arr, (a, b) -> b[1].compareTo(a[1])); // for reverse order Arrays.sort(arr, (a, b) -> a[1].compareTo(b[1]));
 //===========================================================================================//
 //long start = System.currentTimeMillis();
 //random.nextInt(max-min+1)+min)&(int)(Math.random()*(max-min+1)+min)
